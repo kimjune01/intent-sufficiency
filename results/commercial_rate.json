@@ -1,0 +1,15 @@
+{
+  "sample_file": "sample_2000.jsonl",
+  "conversations": 1993,
+  "english": 1097,
+  "commercial_any": 104,
+  "commercial_rate": 0.0522,
+  "by_category": {
+    "shopping": 7,
+    "travel": 78,
+    "food_local": 21,
+    "software": 3,
+    "services": 1,
+    "how_to_buy": 2
+  }
+}

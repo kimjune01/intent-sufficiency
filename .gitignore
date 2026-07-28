@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+# WildChat-derived content: reproduced via src/fetch_sample.py, not redistributed
+# (AI2 ImpACT license; conversations may contain personal/toxic content)
+data/
+results/*.jsonl
