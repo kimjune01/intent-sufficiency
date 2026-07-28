@@ -56,3 +56,11 @@ See worklog.md.
 [WildChat-1M](https://huggingface.co/datasets/allenai/WildChat-1M) (AI2 ImpACT
 license); the fetch script reproduces them from the public API rather than
 redistributing the corpus.
+
+## Data pointers
+
+The corpus is not redistributed; the repo commits exact pointers instead:
+`data/MANIFEST.json` (fetch parameters + the 1,993 `conversation_hash` ids,
+sufficient to reconstruct the identical sample from the public API) and
+`results/labels_*.json` (per-run outcome labels keyed by hash, so every
+reported rate is checkable row-by-row against a reconstruction).

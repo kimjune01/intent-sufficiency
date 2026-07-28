@@ -2,5 +2,8 @@
 __pycache__/
 # WildChat-derived content: reproduced via src/fetch_sample.py, not redistributed
 # (AI2 ImpACT license; conversations may contain personal/toxic content)
-data/
+data/*
 results/*.jsonl
+!results/labels_*
+# content-free pointers ARE committed:
+!data/MANIFEST.json
