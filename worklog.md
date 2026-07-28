@@ -80,3 +80,19 @@ Predictions, stated before running, thesis at stake:
    dominates-the-dossier thesis takes real damage and the post must say so.
 Design notes: hashed_ip links users in the public view; identifiers stay
 local (data/ is not committed), published results key on conversation_hash.
+
+## 2026-07-28 — dossier-redundancy results (n=80 users, pre-registered)
+- material change 11/80 = 13.8% (< 20% predicted ✓); none→intent 8.8% (< 10% ✓)
+- Composition is the story:
+  * 76% both-NONE (casual either way — consistent with ~15% denominator)
+  * Of the 12 conversations that declare intent question-only: 8 unchanged,
+    2 changed but same-neighborhood (cos 0.837/0.842, just under the strict
+    0.85 bar; eyeball: same-domain refinements), 2 suppressed to NONE
+    (likely extraction instability — flag, don't spin).
+  * The dossier's whole contribution concentrates in none→intent (7 cases):
+    history surfaces intent when the CURRENT conversation is casual. That is
+    reach into the non-consented surface — exactly the inventory the
+    Ask First two-phase model refuses by design (no commercial context, no
+    indicator). Within the consented surface, the dossier is ~redundant.
+- Caveats for the post: n=80; hashed_ip≈user is approximate (shared IPs);
+  extraction nondeterminism bounds the small buckets; single corpus.
