@@ -143,3 +143,9 @@ descriptive difference is too imprecise to interpret as a dossier effect.
 The observed asymmetry toward NONE→intent with history (8 vs 6) is
 exploratory." Convergence: no remaining computational defects; scope items
 are conceded limitations of a directional study.
+
+## 2026-07-28 — full-sample yield final
+- 401/1,989 valid = 20.2% intent, Wilson 95% CI [18.5%, 22.0%]; 4 invalid,
+  0 errors. Pre-registered band was 10-20%: the point estimate lands just
+  ABOVE the top edge. Reported as such, no rounding down. Not near the >30%
+  leak criterion.
