@@ -112,3 +112,20 @@ config header, actual included-history counts. README rescoped: yield ≠
 commercial-intent prevalence; wrapped prompt is a REPAIRED mechanism, not the
 shipped one; matchability step marked planned, not done. Rebutted: prereg
 immutability — commit 880619f was pushed before either run launched.
+
+## 2026-07-28 — dossier v2 results (control-adjusted, n=80)
+- CONTROL (q1 vs q2, identical condition): disagreement 11/80 = 13.8% —
+  exactly the rate v1 reported as its treatment effect. v1's headline was
+  the extractor's own noise, fully.
+- TREATMENT (q1 vs prior-only history): 13/79 = 16.5%.
+- EXCESS = +2.7pp, n=80 → not distinguishable from zero. One clearly real
+  dossier override (cos 0.49: translation → financial recovery planning).
+- Directional read: at this instrument's noise floor (~14% self-disagreement
+  at CLI default temperature), adding a prior-history dossier moves extracted
+  intent by an amount we cannot separate from noise; what signal exists sits
+  in none→intent (8 vs control 6), direction consistent with "reach, not
+  accuracy." Weak result, expected, in scope.
+- Instrument lesson: control-arm cosines dip to 0.842 — self-disagreement
+  crosses the 0.85 bar, so ANY threshold-based change metric without a
+  control arm overstates. To detect small effects: k-vote extraction or
+  pinned temperature to lower the floor first.
