@@ -96,3 +96,19 @@ local (data/ is not committed), published results key on conversation_hash.
     indicator). Within the consented surface, the dossier is ~redundant.
 - Caveats for the post: n=80; hashed_ip≈user is approximate (shared IPs);
   extraction nondeterminism bounds the small buckets; single corpus.
+
+## 2026-07-28 — codex review volley 1: v1 dossier result WITHDRAWN
+34-item external review. Accepted as invalidating v1's treatment: history
+included FUTURE conversations (temporal leakage); the guard told the model to
+ignore the history whose effect we measured; no nondeterminism control, so
+all 11 "material changes" are confounded with run-to-run variance; NONE→intent
+conditional denominator is 7/68 = 10.3%, breaching the pre-registered <10%
+under that reading; 13.8% has a 95% CI of ~7-23%, so "prediction held" was
+too strong; "cosmetic changes" was a post-hoc override of the registered
+threshold. v1 numbers are not to be cited. v2 fixes: prior-only history,
+history-may-inform guard, q1/q2 control arm, sanitized tags, validity
+classification (ERROR/empty/malformed no longer count as intent), per-run
+config header, actual included-history counts. README rescoped: yield ≠
+commercial-intent prevalence; wrapped prompt is a REPAIRED mechanism, not the
+shipped one; matchability step marked planned, not done. Rebutted: prereg
+immutability — commit 880619f was pushed before either run launched.

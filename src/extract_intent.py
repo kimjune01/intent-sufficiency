@@ -42,15 +42,24 @@ def load_sampled(path: pathlib.Path, n: int) -> list[dict]:
 
 
 def summarize(out: pathlib.Path, label: str) -> None:
+    """Validity-classified summary: ERROR/empty/malformed outputs are not intent."""
     rows = [json.loads(l) for l in out.open()]
-    none = sum(1 for r in rows if r["intent"].strip().strip('"').upper() == "NONE")
-    print(
-        json.dumps(
-            {"model": label, "extracted": len(rows), "none": none,
-             "non_none_rate": round(1 - none / len(rows), 4)},
-            indent=2,
-        )
-    )
+    counts = {"intent": 0, "none": 0, "error": 0, "invalid": 0}
+    for r in rows:
+        t = r["intent"].strip()
+        if t.startswith("ERROR") or not t:
+            counts["error"] += 1
+        elif t.strip('"').upper() == "NONE":
+            counts["none"] += 1
+        elif len(t) > 300 or "```" in t or t.startswith(("#", "|", "**")) or t.count("\n") > 1:
+            counts["invalid"] += 1
+        else:
+            counts["intent"] += 1
+    valid = counts["intent"] + counts["none"]
+    print(json.dumps({
+        "model": label, "rows": len(rows), **counts,
+        "intent_rate_over_valid": round(counts["intent"] / valid, 4) if valid else None,
+    }, indent=2))
 
 
 def main() -> None:
