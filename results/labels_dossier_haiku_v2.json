@@ -1,0 +1,482 @@
+{
+"01e900a9c907ca3eb394f84cbf5cfef9": {
+"h": "none",
+"n_prior_included": 3,
+"q1": "none",
+"q2": "none"
+},
+"0432bf5beb7097ec2cc6bda14e6f3f05": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"0914c04b27fba3a29bdc431c7c7fbac5": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"0982b9b064925d94e440c4d4ced0862c": {
+"h": "intent",
+"n_prior_included": 1,
+"q1": "intent",
+"q2": "intent"
+},
+"0d418320b661ee8903cf4bf1a5bca9ac": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "intent"
+},
+"0e21aa2687a2e81626046fa44c29882f": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"0f84a38577abdb42c7b605a9151469a6": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"0fead708753ecfb6e17c4422bc27a178": {
+"h": "none",
+"n_prior_included": 9,
+"q1": "none",
+"q2": "intent"
+},
+"143495dad8e352013eb878e7717e3b52": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"1a87f5fe19b3e1cab03ff6ba205cd69d": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"212bcebd62064cf85f154d8abd741c5e": {
+"h": "intent",
+"n_prior_included": 3,
+"q1": "none",
+"q2": "none"
+},
+"21a566da4b2d2c3b3c3a8881db0ef5b3": {
+"h": "intent",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"22bfce342a6d90a44771f7a057943fc4": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"2a0cd80897fda99a73380a912c48893e": {
+"h": "none",
+"n_prior_included": 2,
+"q1": "intent",
+"q2": "none"
+},
+"2b1538aba09c8221c291df45ee1e1e71": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"322272dcdb56ca8ffcb4fd5b0f58d1ce": {
+"h": "none",
+"n_prior_included": 2,
+"q1": "none",
+"q2": "none"
+},
+"367ffd9e2fce17a89ba01e434f5642c3": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"385515ee17c9d30c28136fb0ca491fbb": {
+"h": "none",
+"n_prior_included": 2,
+"q1": "none",
+"q2": "none"
+},
+"3b5f00844e62d960a22ea46f17308bbd": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"3d0215e21a8d89e82ccf79a7df932ecb": {
+"h": "invalid",
+"n_prior_included": 13,
+"q1": "none",
+"q2": "none"
+},
+"3dbdb4f1805df0e44da3e807aa130c44": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"4717d3cdfac0a14c299297cfe7c32ff1": {
+"h": "intent",
+"n_prior_included": 1,
+"q1": "intent",
+"q2": "intent"
+},
+"4a9cb570d23690660c0a79a9e0f70b99": {
+"h": "intent",
+"n_prior_included": 7,
+"q1": "intent",
+"q2": "intent"
+},
+"4c831ac6103610d5caef57a2e3ef1ad3": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"500f24498399730d6b468b4281b838ae": {
+"h": "intent",
+"n_prior_included": 1,
+"q1": "intent",
+"q2": "intent"
+},
+"554bdf1e6301471adbbd2ceef5e87f30": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"56d1bca6c21ae4bf47045eb8b2ac0fdf": {
+"h": "intent",
+"n_prior_included": 1,
+"q1": "intent",
+"q2": "intent"
+},
+"5a6711ffd10c1ab75f3d09c57bbe9e7b": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"61129d6cde96bc9e0c30b94e0b892c7b": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"62a1981cbdc6201a973df2fd5ce9d4cf": {
+"h": "intent",
+"n_prior_included": 1,
+"q1": "intent",
+"q2": "intent"
+},
+"6aa218f9202423e12a4edace42e5cae2": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "intent"
+},
+"6b2069971bd0ee5679f52b5dd10f0491": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"6b9c142b1ed9c72cf0f5d29e3c5f91e9": {
+"h": "intent",
+"n_prior_included": 1,
+"q1": "intent",
+"q2": "none"
+},
+"70d9a3f109e7fe8aee0c6b65b15c0117": {
+"h": "none",
+"n_prior_included": 3,
+"q1": "intent",
+"q2": "none"
+},
+"71eadea4e36bc7fd54472ffb527eca99": {
+"h": "intent",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "intent"
+},
+"7a8a24d0bac254d561ae8ebd30c5b479": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"7d4d2adf2286ace93f84b0d2ae471a74": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"8867f340666f8cbe9581feedc0ffbc85": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"88f6fc8125871102296f783c093991d3": {
+"h": "intent",
+"n_prior_included": 1,
+"q1": "intent",
+"q2": "intent"
+},
+"897d08de2c29a17a44a7633fba4c09d1": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"8980ec597a06fe92626471273d8a8975": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"898707ba6a5660817e575c314d9f911d": {
+"h": "none",
+"n_prior_included": 11,
+"q1": "none",
+"q2": "none"
+},
+"8b2a9bcce210eadacc0764c324274382": {
+"h": "intent",
+"n_prior_included": 1,
+"q1": "intent",
+"q2": "intent"
+},
+"94e6ecbb9f6e019433cb9deb1d8da8f5": {
+"h": "intent",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "intent"
+},
+"9cbd8296d31afb5e488695297afb22d7": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"9cc50de98b644135bbdfa9521c788e83": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"9f1f977a239a47e3af031bd4769c28cd": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"a26482e59f7b8570410b2e3e62ac3e1f": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"a3adabccf1e712a12f40819c7a4505fd": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"a9b718de8211be9cc527c391202ea739": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"ad7c0479289c861e5e1247c4cb746da2": {
+"h": "none",
+"n_prior_included": 3,
+"q1": "none",
+"q2": "none"
+},
+"b01df6066e5101233e9f1f3e31e59f80": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"b24d593dc525b4a16d0e0168f46b2ddc": {
+"h": "intent",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"b32205ba021af4f796e4da4fc0927600": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"ba4bfd08057bc29180e41c27c9600348": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"bbc24ed23488064065e01fae02f0d3af": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"bd664ccc945e2dee72a2ce112a9bf2e5": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"c02c99da8c56adbf69fc34e72f8371fb": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"c38132ed38a8c942f19eb12879540873": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"c671f6d59e77e736b2f96238bd389cd9": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"c6dc40cf79dc7e2a7e312b4b7b6793af": {
+"h": "intent",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"ca0359ffad02734fdd3ced91d0a93b83": {
+"h": "intent",
+"n_prior_included": 2,
+"q1": "none",
+"q2": "none"
+},
+"cbdf19e8b52358b409711abdda2b6003": {
+"h": "intent",
+"n_prior_included": 1,
+"q1": "intent",
+"q2": "none"
+},
+"d0156a2fa2517562caeb3dff9aa4c7f7": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"d0d31836e533499cbcca1a26acd15e99": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"d28171e722d06eb372e348bb5de088dc": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"d7bb50e09685f41f3221aff712446e4e": {
+"h": "none",
+"n_prior_included": 14,
+"q1": "none",
+"q2": "none"
+},
+"d90637a9ed9eac6745eec0f9a370b6a8": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"dbbaf61c10a85be861888ff9f79f7d27": {
+"h": "intent",
+"n_prior_included": 1,
+"q1": "intent",
+"q2": "intent"
+},
+"dc3f7ddb3d8735d7352bb59b11e6d47a": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"df1d810674fac78f8017836f12981ca6": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"e5a754d6462d34e9278ba32bb80e59f7": {
+"h": "none",
+"n_prior_included": 3,
+"q1": "none",
+"q2": "none"
+},
+"ef5f46860cff8461b5aaecdef6c9ab6f": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"f0e5db5a05436b591503202810ad0103": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"f63f800f06c338d6693363483f964607": {
+"h": "intent",
+"n_prior_included": 1,
+"q1": "intent",
+"q2": "intent"
+},
+"f88b459ea30f5ba2d0eb2fb90f981b5a": {
+"h": "intent",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "intent"
+},
+"fcc1792f1e5a7c9e8678ac218ebbed1f": {
+"h": "none",
+"n_prior_included": 8,
+"q1": "none",
+"q2": "none"
+},
+"fe0c3337f93425642756a898737f31bd": {
+"h": "none",
+"n_prior_included": 1,
+"q1": "none",
+"q2": "none"
+},
+"ff50060f7dd03f4561372d79fd39e3a2": {
+"h": "none",
+"n_prior_included": 10,
+"q1": "none",
+"q2": "none"
+},
+"ff5d624df40c42c0a3358927f100ea72": {
+"h": "none",
+"n_prior_included": 0,
+"q1": "none",
+"q2": "none"
+}
+}
