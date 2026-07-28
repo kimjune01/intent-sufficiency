@@ -69,9 +69,13 @@ def main() -> None:
         seen_hashes.add(r["hash"])
         if r["hashed_ip"] and (r.get("language") or "").lower() == "english":
             by_ip[r["hashed_ip"]].append(r)
-    # eligible: user has >=2 convos so a non-first target exists
-    multi = {ip: sorted(cs, key=lambda c: c["timestamp"])
-             for ip, cs in by_ip.items() if len(cs) >= 2}
+    # eligible: user has at least one (target, prior) pair under STRICT
+    # timestamp ordering — tied timestamps do not count as prior history
+    multi = {}
+    for ip, cs in by_ip.items():
+        cs = sorted(cs, key=lambda c: c["timestamp"])
+        if any(c["timestamp"] > cs[0]["timestamp"] for c in cs[1:]):
+            multi[ip] = cs
 
     rng = random.Random(0)
     users = rng.sample(sorted(multi), min(n_users, len(multi)))
@@ -96,8 +100,10 @@ def main() -> None:
     with out.open("a") as f:
         for i, ip in enumerate(users):
             convs = multi[ip]
-            # target: random among conversations that have at least one prior
-            target = rng.choice(convs[1:])
+            # target: random among conversations with >=1 STRICTLY prior convo
+            eligible = [c for c in convs
+                        if any(o["timestamp"] < c["timestamp"] for o in convs)]
+            target = rng.choice(eligible)
             if target["hash"] in done:
                 continue
             prior = [c for c in convs if c["timestamp"] < target["timestamp"]]

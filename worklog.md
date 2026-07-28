@@ -129,3 +129,17 @@ immutability — commit 880619f was pushed before either run launched.
   crosses the 0.85 bar, so ANY threshold-based change metric without a
   control arm overstates. To detect small effects: k-vote extraction or
   pinned temperature to lower the floor first.
+
+## 2026-07-28 — codex volley 2: three fixes, then convergence
+Codex pass 2 cleared the revised account except: (1) tied-timestamp subject
+counted as treated with zero history — fixed, common analysis set n=78;
+(2) no paired test — added exact McNemar on discordant pairs; (3) wording
+overreach on "only visible signal" — adopted codex's phrasing. Final numbers:
+control 11/78 = 14.1%, treatment 13/78 = 16.7%, excess +2.6pp, discordant
+7 vs 5, McNemar p = 0.774. Blog-post sentence (codex-agreed): "Adding prior
+conversation history changed extracted intent only about 2.6 percentage
+points more often than a repeat extraction without history; at n=78 that
+descriptive difference is too imprecise to interpret as a dossier effect.
+The observed asymmetry toward NONE→intent with history (8 vs 6) is
+exploratory." Convergence: no remaining computational defects; scope items
+are conceded limitations of a directional study.

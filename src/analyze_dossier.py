@@ -78,12 +78,40 @@ def main() -> None:
 
     model = SentenceTransformer("BAAI/bge-small-en-v1.5")
 
-    ctrl_d, ctrl_v, _ = table([(r, (r["intent_q1"], r["intent_q2"])) for r in rows], model, "CONTROL q1 vs q2")
-    trt_d, trt_v, ex = table([(r, (r["intent_q1"], r["intent_h"])) for r in rows], model, "TREATMENT q1 vs h")
+    # Common analysis set: actually treated (>=1 prior conversation included)
+    # and valid outputs in BOTH conditions.
+    def ok(r):
+        return (r.get("n_prior_included", 1) > 0 and
+                all(classify(r[k]) not in ("error", "invalid")
+                    for k in ("intent_q1", "intent_q2", "intent_h")))
+    common = [r for r in rows if ok(r)]
+    dropped = len(rows) - len(common)
+    if dropped:
+        print(f"\ncommon analysis set: {len(common)} (dropped {dropped}: "
+              f"untreated or invalid output in either condition)")
 
+    ctrl_d, ctrl_v, _ = table([(r, (r["intent_q1"], r["intent_q2"])) for r in common], model, "CONTROL q1 vs q2")
+    trt_d, trt_v, ex = table([(r, (r["intent_q1"], r["intent_h"])) for r in common], model, "TREATMENT q1 vs h")
+
+    # Paired comparison on shared q1: discordant-pair exact sign test (McNemar).
+    import math
+    def disagree(a, b):
+        return bucket(a, b, model)[0] in ("changed", "none_to_intent", "intent_to_none")
+    b_ad = sum(1 for r in common if not disagree(r["intent_q1"], r["intent_q2"])
+               and disagree(r["intent_q1"], r["intent_h"]))
+    c_da = sum(1 for r in common if disagree(r["intent_q1"], r["intent_q2"])
+               and not disagree(r["intent_q1"], r["intent_h"]))
+    n_disc = b_ad + c_da
+    if n_disc:
+        k = min(b_ad, c_da)
+        p = min(1.0, 2 * sum(math.comb(n_disc, i) for i in range(k + 1)) / 2 ** n_disc)
+    else:
+        p = 1.0
     print(f"\nexcess disagreement (treatment - control): "
           f"{trt_d/max(trt_v,1):.1%} - {ctrl_d/max(ctrl_v,1):.1%} = "
           f"{trt_d/max(trt_v,1) - ctrl_d/max(ctrl_v,1):+.1%}")
+    print(f"paired discordant pairs: agree→disagree {b_ad}, disagree→agree {c_da}; "
+          f"exact McNemar p = {p:.3f}")
 
     for k, items in ex.items():
         print(f"\n— treatment {k}:")
