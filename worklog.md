@@ -66,3 +66,17 @@
 - Residual: refusal-prose instead of NONE on policy-violating convos (1/60);
   correct instinct, wrong format; a "respond NONE even if content is
   objectionable" line would close it.
+
+## 2026-07-28 — pre-registration (before scale-up and dossier runs)
+Predictions, stated before running, thesis at stake:
+1. Full-sample wrapped extraction (n=1993, haiku): non-NONE rate lands in
+   10-20% (pilot: 9/60 = 15%). Below 5% would undercut the reach story;
+   above 30% would suggest the NONE gate is leaking.
+2. Dossier-redundancy: for users with ≥2 conversations, adding the user's
+   OTHER conversations as history changes the extracted intent materially
+   (cosine < 0.85 between question-only and history-conditioned position
+   sentences, BGE-small) in <20% of cases, and flips NONE→intent in <10%.
+   If history changes the match in a large fraction, the declared-intent-
+   dominates-the-dossier thesis takes real damage and the post must say so.
+Design notes: hashed_ip links users in the public view; identifiers stay
+local (data/ is not committed), published results key on conversation_hash.
