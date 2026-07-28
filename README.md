@@ -82,3 +82,24 @@ The corpus is not redistributed; the repo commits exact pointers instead:
 sufficient to reconstruct the identical sample from the public API) and
 `results/labels_*.json` (per-run outcome labels keyed by hash, so every
 reported rate is checkable row-by-row against a reconstruction).
+
+## Selection stack (why this is a directional study)
+
+Five undocumented-or-unvalidated filters sit between "chat traffic" and these
+numbers: (1) users who opted into WildChat's free-GPT-for-data offer;
+(2) AI2's release filtering; (3) the undocumented rule selecting the 837,989-row
+ungated public view out of ~1M (the withheld remainder is uncharacterized);
+(4) this repo's 20-offset stride for the yield sample; (5) contiguous blocks
+for the user-linked sample. Results carry sign, not magnitude.
+
+## The real study (if anything gets serious)
+
+- Live operator traffic, not an opted-in research corpus; outcomes (taps,
+  clicks, conversions), not text properties.
+- Blinded human labels with a rubric and agreement stats for both precision
+  and false-NONE recall; power analysis before n is chosen.
+- True user identity (session auth, not hashed_ip); history that is actually
+  the deployed dossier, prospectively logged.
+- The shipped extractor as deployed (post transcript-wrapping patch), one
+  pinned model version, temperature recorded, k repeats per condition.
+- Pre-registration in an external registry, not a repo commit.
